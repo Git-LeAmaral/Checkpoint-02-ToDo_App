@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/check-mark.png" type="image/x-icon">
+  <title>To-Do App</title>
+
+
+
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="./styles/acesso.css">
+
+  <!-- ---------------------- lógica aplicada no login ----------------------- -->
+  <script src="./scripts/utils.js" type="module" defer></script>
+  <script src="./scripts/index.js" type="module" defer></script>
+
+
+    <!-- ----------------------------- sweet alert ----------------------------- -->
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <!-- CDN example (unpkg) -->
+     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
+
+</head>
+
+<body>
+  <div class="left">
+    <img src="./assets/pessoa-login.png" alt="">
+  </div>
+
+  <div class="right">
+
+    <form>
+
+      <div class="form-header">
+
+        <p>To-Do App</p>
+
+      </div>
+
+      <h1>Acessar</h1>
+
+      <div class="user-input" >
+
+        <label>
+          Email:
+        </label>
+          <input id="inputEmail" type="email" required>
+        <small>Preencha o email corretamente</small>
+      </div>
+
+      <div class="user-input" id="userPassword">
+        <label>
+          Senha:
+        </label>
+          <input  id="inputPassword" type="password" min="8" required>
+        <small>Preencha a senha corretamente</small>
+      </div>
+      
+        <small  id="loginError">Seu E-mail e/ou Senha estão incorretos. Verifique.</small>
+
+      <button id="btnLogin" type="submit" disabled>Acessar</button>
+
+    </form>
+
+    <div class="ingressar">
+
+      <a href="signup.html">Não possui conta? Crie agora mesmo</a>
+
+    </div>
+    
+  </div>
+
+</body>
+
+</html>
